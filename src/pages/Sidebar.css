@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sidebar Container */
+.sidebar-container {
+  position: relative;
+}
+
+.sidebar {
+  /* width: 239px; */
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  /* background-color: #f8f9fa; */
+  position: fixed;
+  border: none;
+  padding-top: 20px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: width 0.3s ease;
+  z-index: 1000;
+}
+
+/* .sidebar {
+  transform: translateX(0);
+} */
+
+/* Sidebar Open/Closed States */
+.sidebar-open {
+  width: 200px;
+}
+
+.sidebar-closed{
+  width: 70px;
+}
+
+/* Sidebar Header */
+.sidebar-header{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+/* Sidebar Title */
+.sidebar-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 26px;
+  color: #000;
+  text-align: left;
+  padding: 12px 0;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle-btn{
+  background-color: transparent;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Sidebar Logo */
+.sidebar-logo{
+  width: 120px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background: transparent;
+  margin-left: 20%;
+}
+
+.sidebar-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* List menu */
+.list-group-item{
+  display: flex;
+  font-size: 16px;
+  padding: 12px 15px;
+  align-items: center;
+  background: none;
+  outline: none;
+  color: #000;
+  transition: background 0.3s, width 0.3s;
+  border: none !important;
+  border-radius: 23px 0 0 23px;
+}
+
+.sidebar .list-group-item:hover, .sidebar .list-group-item.active{
+  background-color: rgba(0, 136, 255, 0.2);
+  color: #003564;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  width: 233px;
+  outline: none;
+  border-radius: 23px 0 0 23px;
+}
+
+/* Sidebar icon and text */
+.sidebar .list-group-item svg{
+  margin-right: 20px;
+  font-size: 17px;
+}
+ 
+/* Navbar Button for Mobile */
+/* button {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+button:hover {
+  color: #007bff;
+} */
+
+/* Main Content (Push Layout) */
+.main-content {
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+}
+
+/* Adjust main content margin based on sidebar state */
+.content-open {
+  margin-left: 200px;
+}
+
+.content-closed {
+  margin-left: 60px;
+}
+
+/* Responsive Design */
+/* Small devices (>=576px and <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+  .sidebar {
+    background: transparent;
+  }
+
+  .sidebar .list-group-item {
+    padding: 10px 15px;
+  }
+
+  .sidebar-title {
+    font-size: 16px;
+  }
+}
+
+/* Medium Devices (≥768px and <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+/* 
+  .navbar-toggle,
+  .d-md-none {
+    display: none !important;
+  } */
+}
+
+/* Large Devices (≥992px) */
+@media (min-width: 992px) {
+  .sidebar {
+    transform: translateX(0);
+  }
+
+  .sidebar .list-group-item:hover {
+    background-color: rgba(0, 136, 255, 0.2);
+  }
+}
+

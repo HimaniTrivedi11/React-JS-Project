@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #f4f4f4; */
+    font-family: "Arial", sans-serif;
+}
+
+/* .container-fluid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+    /* transition: margin-left 0.3s ease-in-out;
+    padding: 20px; 
+} */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+/* Search bar container */
+.searchbar-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+.searchbox {
+    width: 100%;
+}
+
+.searchbar-input {
+    border-left: no;
+}
+
+.search-icon {
+    background-color: #f8f9fa;
+    border-right: none;
+}
+
+.input-group {
+    max-width: 400px;
+}
+
+.form-control {
+    border-left: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 15px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styling */
+.clock-card,
+.calendar-card {
+    border-radius: 12px;
+    /* transition: transform 0.2s ease-in-out; */
+    background: #f8f9fa;
+}
+
+/* Card Title */
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Calendar Section */
+.calendar-card {
+    border-radius: 10px;
+    background: #fff;
+}
+
+.calendar-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Date Picker Styling */
+.datepicker-container {
+    /* background: #f8f9fa; */
+    max-width: 350px;
+    border: 1px solid #ddd;
+}
+
+/* Task List */
+.task-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.no-task-message {
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+    color: #6c757d;
+}
+
+.border-end {
+    border-right: 2px solid #ddd;
+}
+
+.task-list {
+    max-height: 250px;
+    overflow-y: auto;
+}
+.task-list .list-group-item {
+    border-radius: 7px;
+}
+
+/* Buttons */
+button {
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.9;
+}

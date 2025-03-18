@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full Screen Container */
+.login-container {
+    background: url("../assets/rose-petals.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.row-container {
+    justify-content: center;
+    width: 750px;
+    max-width: 100%;
+    /* min-height: 380px; */
+    position: relative;
+    overflow: hidden;
+    /* height: 100vh; */
+    height: 100%;
+    display: flex;
+}
+
+/* Logo Image */
+.logo-container {
+    top: 20px;
+    left: 20px;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    background: transparent;
+
+}
+
+.logo-img {
+    width: 90px;
+    height: auto;
+}
+
+/* Login and Side Image Card */
+
+.login-card {
+    max-width: 650px;
+    width: 100%;
+    margin: auto;
+    top: 12%;
+    padding: 10px;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.form-section {
+    width: 100%;
+    max-width: 620px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-weight: 600;
+}
+
+/* .form-section {
+    padding: 40px;
+    text-align: left;
+    font-weight: 500;
+} */
+
+.form-control {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.login-btn {
+    background: linear-gradient(to right, #005484, #3974b3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.login-btn:hover {
+    filter: brightness(90%);
+    transform: translateY(-2px);
+}
+
+.register-link {
+    text-decoration: none;
+    color: #005484;
+    font-weight: bold;
+}
+
+.register-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: #3974b3;
+}
+
+.image-section {
+    background: url('../assets/img5.jpg') center/cover no-repeat;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    padding: 10px;
+    border-radius: 0 25px 25px 0;
+    overflow: hidden;
+    flex: 1;
+}
+
+/* Responsive Design */
+
+/* For Extra Small Screens */
+@media (max-width: 576px) {
+
+    /* Extra small (xs) */
+    .row-container {
+        flex-direction: column;
+    }
+
+    .login-card {
+        width: 50%;
+        /* Use more screen space on small devices */
+        padding: 20px;
+    }
+
+    .form-section {
+        padding: 20px;
+    }
+
+    .image-section {
+        display: none;
+        /* Hide the image section on small devices */
+    }
+}
+
+/* For Small Screens */
+@media (min-width: 576px) and (max-width: 768px) {
+
+    /* Small (sm) */
+    .row-container {
+        flex-direction: column;
+    }
+
+    .login-card {
+        width: 40%;
+    }
+
+    .image-section {
+        display: none;
+        /* Hide the image section on small devices */
+    }
+
+}
+
+/* For Medium and Larger Screens */
+@media (min-width: 768px) {
+    /* Medium (md) */
+
+
+    .login-card {
+        width: 450px;
+        /* Maintain a fixed size on larger screens */
+    }
+
+}

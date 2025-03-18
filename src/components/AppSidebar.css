@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar{
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: transparent;
+  position: fixed;
+  padding: 20px; 
+  overflow: hidden;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.sidebar .open{
+  width: 56px;
+}
+/* Sidebar and button rotation */
+.sidebar.close {
+  width: 60px; 
+}
+
+.navbar-button.rotate {
+  transform: rotate(180deg); 
+}
+
+.content-container {
+  transition: margin-left 0.3s ease;
+  padding: 20px;
+}
+
+.content-open {
+  margin-left: 250px;
+}
+
+.content-closed {
+  margin-left: 60px;
+} 
+
+/* Avatar and Notification Bell Container*/
+/* .center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
+
+/* .avatar-container {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  height: 100%;
+  width: 100%;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.notification-bell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-bottom: 24px;
+  margin-top: 20px;
+}
+
+.notification-bell .notification-count {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  transform: translate(50%, -50%);
+  background-color: #4d91ff;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+} */

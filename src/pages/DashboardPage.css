@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+/* Search bar container */
+.searchbar-container{
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+}
+
+.searchbox{
+  width: 100%;
+}
+
+.searchbar-input{
+  border-left: no;
+}
+
+.search-icon{
+  background-color: #f8f9fa;
+  border-right: none;
+}
+
+.input-group {
+  max-width: 400px;
+}
+
+.form-control {
+  border-left: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* User info */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.user-info-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user-icon {
+  font-size: 24px;
+  color: #333;  /* Dark grey color */
+  cursor: pointer;
+}
+
+.user-icon:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+
+/* User Image */
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 23px;
+}
+
+/* Notification Bell Icon */
+
+.notifications {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.notifications .notification-count {
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.notification-icon {
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 12px;
+  gap: 10px;
+}
+
+.notification-list {
+  z-index: 1000;
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.notification-item {
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.notification-item:hover {
+  background: #f8f9fa;
+}
+
+
+/* Username */
+.user-name {
+  font-size: 14px;
+  font-weight: bold;
+  gap: 10px;
+  margin-right: 12px;
+}
+
+/* Card Styling */
+.card {
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* background: linear-gradient(135deg, #f3f4f7, #e6e9f0); */
+  background: #fff;
+}
+
+/* Button Styling */
+button {
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 12px 20px;
+  width: 100%;
+}
+
+/* Circular Progress Bar */
+.react-circular-progressbar {
+  width: 120px;
+  height: 120px;
+}
+
+
+/* Media Query */
+/* Extra small : Less than 576px */
+@media (max-width: 575.98px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .user-info-container {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .searchbar-container{
+    width: 100%;
+    padding: 5px;
+  }
+
+  .searchbar-input{
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Small : 576px to 767px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .user-info-container {
+    justify-content: flex-end;
+  }
+
+  .searchbar-container{
+    max-width: 100%;
+  }
+}
+
+/* Medium (md): 768px - 991px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .header-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .user-info-container {
+    justify-content: flex-end;
+  }
+
+  .searchbar-container{
+    max-width: 450px;
+  }
+}
+
+/* Large (lg): 992px and above */
+@media (min-width: 992px) {
+
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .user-info-container {
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  .searchbar-container {
+    max-width: 600px;
+  }
+}

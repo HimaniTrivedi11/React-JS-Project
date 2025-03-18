@@ -1,0 +1,233 @@
+/* User Profile Styling */
+.user-profile-card {
+    flex-shrink: 0;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Profile Body */
+.user-profile-card .profile-body {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #afafaf;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+/* Status Buttons */
+.status-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center align buttons */
+    gap: 10px;
+}
+
+
+/* Notification Card */
+.notification-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    background: #f8f9fa; 
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Reminder Section */
+.reminder-section {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: #eef2f7; /* Slightly different shade for contrast */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Tracker */
+/* .task-tracker-card .card-header { */
+    /* background-color: #6c757d; */
+    /* color: #000; 
+}*/
+.task-tracker-card {
+    flex-shrink: 0;
+    width: calc(100% - 250px); /* Adjust dynamically */
+}
+
+
+.task-item {
+    margin-bottom: 10px;
+}
+
+.task-item h5:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.badge {
+    border-radius: 12px;
+    padding: 0.4rem 0.8rem;
+}
+
+
+/* Analytics Section */
+.analytics-section {
+    margin-top: 15px;
+}
+
+/* Progress Bar */
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+
+/* Notification & Reminder */
+.notifications-section {
+    margin-top: 15px;
+}
+
+.notification-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .user-profile-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-status-section {
+        flex-direction: column;
+    }
+
+    .profile-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .status-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .status-buttons button {
+        width: 45%;
+    }
+
+    .user-profile-card,
+    .notification-card,
+    .reminder-section {
+        width: 100%;
+        margin-bottom: 3px;
+    }
+
+    .task-tracker-card {
+        width: 100%;
+        text-align: center;
+    }
+
+    .analytics-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .status-buttons {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .reminder-section {
+        flex-direction: column;
+        padding-bottom: 12px;
+    }
+
+    .notification-card {
+        text-align: center;
+    }
+}
+
+/* Small Screen */
+@media (max-width: 768px) {
+    .user-profile-card {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .profile-body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .status-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .status-buttons button {
+        width: 100%;
+    }
+
+    .task-tracker-card {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .analytics-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .status-buttons {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .status-buttons button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .reminder-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .notification-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .notifications-section {
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+    }
+}
