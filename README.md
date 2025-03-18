@@ -9,7 +9,6 @@ This project is a React application designed for efficient employee time trackin
 * Project/Task Assignment
 * Data Visualization (Charts, Graphs)
 * Report Export (PDF)
-* Calendar View
 
 ## Technology Stack
 
